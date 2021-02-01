@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use('/', routes);
 
-const startServer = (port = 9997) => {
+const startServer = (port = 9996) => {
     const server = app.listen(port, function () {
       console.log(`Server running on port ${server.address().port}`);
     });
